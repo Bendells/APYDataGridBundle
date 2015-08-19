@@ -217,7 +217,7 @@ class Grid
      *
      * @var int
      */
-    protected $dataJunction = Column::DATA_CONJUNCTION;
+    protected $dataJunction = Column::DATA_DISJUNCTION;
 
     /**
      * Permanent filters
