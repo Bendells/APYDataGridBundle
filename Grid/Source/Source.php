@@ -209,7 +209,7 @@ abstract class Source implements DriverInterface
                            || is_callable(array($itemEntity, $fullFunctionName = 'is'.$functionName))) {
                         $fieldValue = call_user_func(array($itemEntity, $fullFunctionName));
                     } else {
-                        throw new PropertyAccessDeniedException(sprintf('Property "%s" is not public or has no accessor.', $fieldName));
+                        //throw new PropertyAccessDeniedException(sprintf('Property "%s" is not public or has no accessor.', $fieldName));
                     }
                 } elseif (isset($item[$fieldName])) {
                     $fieldValue = $item[$fieldName];
